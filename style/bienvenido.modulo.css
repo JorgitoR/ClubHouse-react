@@ -1,0 +1,32 @@
+.ContenedorBienvenido{
+	padding: 3em 1.5em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	height: 100vh;
+	background-color: #f2f0e4;
+}
+
+.h1Bienvenido{
+	font-size: 1.7em;
+	font-weight: 500;
+	font-style: normal;
+	margin-bottom: 0;
+	color: var(--textColor);
+}
+
+.BienvenidoInfo{
+
+	height: 253px;
+	overflow: auto;
+
+}
+
+.BienvenidoInfo p{
+	margin-bottom: 2em;
+	color: var(--textColor);
+	font-size: 1em;
+	font-style: normal;
+	font-weight: 900;
+}
