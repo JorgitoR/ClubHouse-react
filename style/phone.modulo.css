@@ -34,3 +34,13 @@
 .PhoneConfirmation p span{
 	font-weight: 500;
 }
+
+.backBtn{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+.backBtn img{
+	width: 20px;
+}

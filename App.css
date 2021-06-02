@@ -15,3 +15,27 @@ body{
   font-size: 1em;
   font-family: "Neutrif pro"
 }
+
+button{
+	outline: none;
+}
+
+a{
+	text-decoration:none!important;
+}
+
+
+a:hover{
+	text-decoration:none!important;
+}
+
+.primaryBtn{
+	background-color:var(--btnBgColor);
+	color: #ffff;
+	border-radius: 2em;
+	padding: 0.5em 1.5em;
+	font-size: 1.2em;
+	font-weight: 500;
+	font-style: normal;
+	text-align: center;
+}

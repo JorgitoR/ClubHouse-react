@@ -17,7 +17,7 @@ export default function PhoneConfirmation(){
 			</Link>		
 
 			<h1>Enter Your Phone</h1>
-			<PhoneInput international defaultCountry='CO' value={value} />
+			<PhoneInput international defaultCountry='CO' value={value} onChange={setValue} />
 			<p>
 				By entering your number, you're agreeing to our
 				<span>Terms of service and privacy policy.</span>
