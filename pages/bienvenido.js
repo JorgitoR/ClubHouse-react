@@ -24,7 +24,7 @@ export default  function Bienvenido(){
 					</p>
 				</div>
 
-				<div className=''>
+				<div className='actionBtn'>
 					<Link exact to='/get_username' className='primaryBtn d-flex align-items-center mb-3'>
 						
 						Get your username{" "}
