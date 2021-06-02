@@ -1,5 +1,6 @@
 import React from "react";
 import style from "../style/bienvenido.modulo.css";
+import { Link } from "react-router-dom";
 
 export default  function Bienvenido(){
 
@@ -22,6 +23,20 @@ export default  function Bienvenido(){
 						Paul, Rohan & the clubhouse Team
 					</p>
 				</div>
+
+				<div className=''>
+					<Link exact to='/get_username' className='primaryBtn d-flex align-items-center mb-3'>
+						
+						Get your username{" "}
+						<img src="" alt="" />
+
+					</Link>
+
+					<Link>
+						Tienes una invitacion por texto? Sig in
+					</Link>
+				</div>
+
 			</div>
 
 	);
