@@ -1,0 +1,11 @@
+.dailyCard{
+
+	background-color: #e7e4d5;
+	padding:0.5em 1em;
+	border-radius: 1em; 
+
+}
+
+.dailyCard > div{
+	display: flex;
+}
