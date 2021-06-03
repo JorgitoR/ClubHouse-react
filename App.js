@@ -1,6 +1,7 @@
 import './App.css';
 
 import Bienvenido from "./pages/bienvenido";
+import Home from "./pages/Home";
 import PlanLayout from './pages/layouts/planLayout';
 import AppLayaout from './pages/layouts/AppLayaout';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
@@ -37,7 +38,7 @@ function App(){
   		<Route exact path={['/home']}>
   			<AppLayaout>
   				<Switch>
-  					<Route exact path="/home" component={() => ['/home']}>
+  					<Route exact path="/home" component={() => '/home'}>
   					</Route>
   				</Switch>
   			</AppLayaout>

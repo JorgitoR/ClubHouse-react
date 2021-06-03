@@ -1,6 +1,14 @@
 import React from "react";
 
-export default function (){
+import Header from "../components/header";
 
-	
+export default function Home(){
+
+
+	return (
+
+		<Header/>
+
+	)
+
 }
