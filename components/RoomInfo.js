@@ -9,6 +9,7 @@ export default function RoomInfoCard(props){
 		<>
 			<h2></h2>
 			
+			{data.map((item) => JSON.stringify(item) )}
 
 		</>
 
