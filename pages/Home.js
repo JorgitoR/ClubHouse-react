@@ -18,6 +18,10 @@ export default function Home(){
 			<DayliInfoCard />
 			<RoomInfo />
 		</div>
+
+		<div className={style.action_btn}>
+			
+		</div>
 		</>
 	);	
 
