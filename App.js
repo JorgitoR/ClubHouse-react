@@ -12,6 +12,7 @@ import notification from './pages/notification';
 //npm install react-router-dom
 //npm install react-phone-number-input
 //npm install react-icons
+//npm install react-swipeable-bottom-sheet
 
 function App(){
   return (
