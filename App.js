@@ -2,6 +2,7 @@ import './App.css';
 
 import Bienvenido from "./pages/bienvenido";
 import PlanLayout from './pages/layouts/planLayout';
+import AppLayaout from './pages/layouts/AppLayaout';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import PhoneConfirmation from './pages/PhoneConfirmation';
 import CodeConfirm from './pages/CodeConfirm';
@@ -31,8 +32,17 @@ function App(){
   			<Route exact path="/notification" component={notification}  />		
   		  </Switch>
   		</PlanLayout>
-
   		</Route>
+
+  		<Route exact path={['/home']}>
+  			<AppLayaout>
+  				<Switch>
+  					<Route exact path="/home" component={() => }>
+  					</Route>
+  				</Switch>
+  			</AppLayaout>
+  		</Route>
+
   	</BrowserRouter>
 
   );
