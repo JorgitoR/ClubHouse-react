@@ -37,7 +37,7 @@ function App(){
   		<Route exact path={['/home']}>
   			<AppLayaout>
   				<Switch>
-  					<Route exact path="/home" component={() => }>
+  					<Route exact path="/home" component={() => ['/home']}>
   					</Route>
   				</Switch>
   			</AppLayaout>
