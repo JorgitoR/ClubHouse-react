@@ -10,8 +10,8 @@ export default function Home(){
 		<>
 		<Header/>
 
-		<div className="home_container">
-			<DayliInfoCard/>
+		<div className={style.home_container}>
+			<DayliInfoCard />
 		</div>
 		</>
 	);	

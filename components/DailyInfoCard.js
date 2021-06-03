@@ -2,12 +2,11 @@ import React from "react";
 import style  from "../style/dailyInfoCard.module.css";
 import data from "../Data/dailyCard.json";
 
-export default function dailyInfoCard(){
+export default function DailyInfoCard(){
 
-	console.log(data)
 	return (
 
-		<div className='dailyCard'>	
+		<div className={style.dailyCard}>	
 			{data.map((item) => (
 
 				<div>
