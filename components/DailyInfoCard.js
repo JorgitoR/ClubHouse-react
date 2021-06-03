@@ -1,5 +1,5 @@
 import React from "react";
-import style from "../style/dailyInfoCard.module.css"
+import style  from "../style/dailyInfoCard.module.css";
 import data from "../Data/dailyCard.json";
 
 export default function dailyInfoCard(){
@@ -7,7 +7,7 @@ export default function dailyInfoCard(){
 	console.log(data)
 	return (
 
-		<div className="dailyCard">	
+		<div className='dailyCard'>	
 			{data.map((item) => (
 
 				<div>
