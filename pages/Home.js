@@ -4,6 +4,9 @@ import DayliInfoCard from "../components/DailyInfoCard";
 import RoomInfo from "../components/RoomInfo";
 import style from "../style/home.module.css";
 
+import { AiOutlinePlus } from 'react-icons/ai';
+import { BsGrid3x3Gap } from 'react-icons/bs';
+
 export default function Home(){
 
 
