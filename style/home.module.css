@@ -7,3 +7,27 @@
 	overflow: auto;
 	height: 100%;
 }
+
+.home_container + .action_btn button{
+	background-color:transparent;
+	border:none;
+	margin-left: auto;
+}
+
+
+.home_container + .action_btn button svg{
+	font-size: 1.3em;
+}
+
+
+.home_container + .action_btn {
+	display: flex;
+	align-items: center;
+	padding: 4em 1.5em 2em 1.5em;
+	position: sticky;
+	left: 0;
+	right: 0;
+	top: 0;
+	background-image: linear-gradient(transparent 20% #f2f0e4 80%)
+}
+
