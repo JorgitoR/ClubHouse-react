@@ -5,7 +5,7 @@ import RoomInfo from "../components/RoomInfo";
 import style from "../style/home.module.css";
 
 import { AiOutlinePlus } from 'react-icons/ai';
-import { BsGrid3x3Gap } from 'react-icons/bs';
+import { BsGrid3X3Gap } from 'react-icons/bs';
 
 export default function Home(){
 
@@ -20,7 +20,13 @@ export default function Home(){
 		</div>
 
 		<div className={style.action_btn}>
-			
+			<button>
+				<AiOutlinePlus className="mr-2" />
+				Start a room
+			</button>
+			<button>
+				<BsGrid3X3Gap />
+			</button>
 		</div>
 		</>
 	);	

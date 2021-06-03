@@ -26,10 +26,18 @@ export default function RoomInfoCard(props){
 									{item.members.map((person) => (
 
 										<p>
-										 {person.first_name} {person.last_name} 
+										 {person.first_name} {person.last_name} <BsChatDotsFill/> 
 										</p>
 
 									))}
+
+									<p className='d-flex align-items-center'>
+										<span className='mr-2'>1.8</span>
+										<BsFillPersonFill />
+
+										<span className='mx-2'></span>
+										<span className='mr-2'>5</span><BsChatDotsFill/> 
+									</p>
 								</div>
 							</div>
 						</div>
