@@ -11,6 +11,7 @@ import notification from './pages/notification';
 //npm install react-router
 //npm install react-router-dom
 //npm install react-phone-number-input
+//npm install react-icons
 
 function App(){
   return (

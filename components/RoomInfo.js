@@ -9,7 +9,16 @@ export default function RoomInfoCard(props){
 		<>
 			<h2></h2>
 			
-			{data.map((item) => JSON.stringify(item) )}
+			{data.map((item) => (
+				<div>
+					<div>
+						<div className={style.roomCardContainer}>
+							<h6>{item.title}</h6>
+							<h2>{item.sub_title}</h2>
+						</div>
+					</div>
+				</div>
+			))}
 
 		</>
 
