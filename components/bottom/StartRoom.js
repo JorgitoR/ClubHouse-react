@@ -13,7 +13,19 @@ export default function StartRoom(props){
    			<div className="text-right">
    				<button className={style.addTopicBtn}>Add a topic</button>
    			</div>
+			<div className={style.selectRoom}>
+				<button className={room == "open" ? style.active : ""}
+				onClick={() => setRoom("open")}
+				>
+
+				<div>
+					<FcGlobe />
+				</div>
+				Open
+				</button>
+			</div>
+
 		</>
-	)
+	);
 
 }

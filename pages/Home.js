@@ -29,7 +29,7 @@ export default function Home(){
 		</div>
 
 		<div className={style.action_btn}>
-			<button onclick={() => setSheetVisible(true)}>
+			<button onClick={() => setSheetVisible(true)}>
 				<AiOutlinePlus className="mr-2" />
 				Start a room
 			</button>
@@ -39,19 +39,18 @@ export default function Home(){
 		</div>
 
 		<BottomSheet
-
-		sheetTitle='start room'
-		setSheetVisible={(item) => setSheetVisible(item)}
-		sheetVisible = {setSheetVisible}
-		cardDetail = {data.find((item) => item.id == cardId)}
-		setItemsVisible={(item) => setItemsVisible(item)}
-		setSheetCreateRoom={(item) => {
-			setLoaderVisibility(true);
-			setTimeout(()=> {
-				setSheetCreateRoom(item);
-				setLoaderVisibility(false)
-			}, 1000);
-		}}
+			sheetTitle='start room'
+			setSheetVisible={(item) => setSheetVisible(item)}
+			sheetVisible = {setSheetVisible}
+			cardDetail = {data.find((item) => item.id == cardId)}
+			setItemsVisible={(item) => setItemsVisible(item)}
+			setSheetCreateRoom={(item) => {
+				setLoaderVisibility(true);
+				setTimeout(()=> {
+					setSheetCreateRoom(item);
+					setLoaderVisibility(false)
+				}, 1000);
+			}}
 
 
 		/>
