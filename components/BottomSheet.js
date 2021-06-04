@@ -15,10 +15,10 @@ export default function BottomSheet(props){
 				props.setItemsVisible(true);
 			}}
 
-			fullScreen={props.sheetTitle == 'room detail' ? true : false} >
+			fullScreen={props.sheetTitle === 'room detail' ? true : false} >
 
-		<div className={style.BottomSheetContainer}
-		style={{backgroundColor:props.sheetTitle == 'profile' ? 'transparent' : '' }}>
+		<div className="BottomSheetContainer"
+		style={{backgroundColor:props.sheetTitle === 'profile' ? 'transparent' : '' }}>
 
 			<StartRoom 
 				setSheetCreateRoom={props.sheetCreateRoom}

@@ -9,12 +9,12 @@ export default function StartRoom(props){
 	return (
 		<>
    			
-   			<div className={style.switch_line}></div>
+   			<div className="switch_line"></div>
    			<div className="text-right">
-   				<button className={style.addTopicBtn}>Add a topic</button>
+   				<button className="addTopicBtn">Add a topic</button>
    			</div>
-			<div className={style.selectRoom}>
-				<button className={room == "open" ? style.active : ""}
+			<div className="selectRoom">
+				<button className={ room === "open" ? style.active : ""}
 				onClick={() => setRoom("open")}
 				>
 				<div>
@@ -23,7 +23,7 @@ export default function StartRoom(props){
 				Open
 				</button>
 
-				<button className={room == "social" ? style.active : ""}
+				<button className={room ==="social" ? style.active : ""}
 				onClick={() => setRoom("social")}
 				>
 				<div>
@@ -32,7 +32,7 @@ export default function StartRoom(props){
 				social
 				</button>
 
-				<button className={room == "closed" ? style.active : ""}
+				<button className={room === "closed" ? style.active : ""}
 				onClick={() => setRoom("closed")}
 				>
 				<div>
@@ -45,13 +45,26 @@ export default function StartRoom(props){
 			<p>
 				Start a room{" "}
 				<span>
-					{room == "closed"
+					{room ==="closed"
 					? "for people I choosed"
-					: room == "social"
+					: room === "social"
 					? "with people I follow"
 					: "open to everyone"}
 				</span>
 			</p>
+
+			<div className="text-center">
+				<button className="letGoBtn"
+				onClick = {() => {
+
+					props.setSheetCreateRoom(true);
+					props.setSheetVisible(true);
+				}}>
+
+				Let's go
+
+				</button>
+			</div>
 
 		</>
 	);

@@ -13,11 +13,11 @@ import data from "../Data/roomCard.json"
 
 export default function Home(){
 
-	const[itemsVisible, setItemsVisible] = useState(true)
-	const[sheetVisible, setSheetVisible] = useState(false)
-	const[sheetCreateRoom, setSheetCreateRoom] = useState(false)
-	const[loaderVisibility, setLoaderVisibility] = useState(false)
-	const[cardId, setCardId] = useState(1)
+	const[itemsVisible, setItemsVisible] = useState(true);
+	const[sheetVisible, setSheetVisible] = useState(false);
+	const[sheetCreateRoom, setSheetCreateRoom] = useState(false);
+	const[loaderVisibility, setLoaderVisibility] = useState(false);
+	const[cardId, setCardId] = useState(1);
 
 	return (
 		<>
