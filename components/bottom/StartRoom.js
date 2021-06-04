@@ -17,13 +17,41 @@ export default function StartRoom(props){
 				<button className={room == "open" ? style.active : ""}
 				onClick={() => setRoom("open")}
 				>
-
 				<div>
 					<FcGlobe />
 				</div>
 				Open
 				</button>
+
+				<button className={room == "social" ? style.active : ""}
+				onClick={() => setRoom("social")}
+				>
+				<div>
+					<FcGlobe />
+				</div>
+				social
+				</button>
+
+				<button className={room == "closed" ? style.active : ""}
+				onClick={() => setRoom("closed")}
+				>
+				<div>
+					<FcGlobe />
+				</div>
+				closed
+				</button>
 			</div>
+
+			<p>
+				Start a room{" "}
+				<span>
+					{room == "closed"
+					? "for people I choosed"
+					: room == "social"
+					? "with people I follow"
+					: "open to everyone"}
+				</span>
+			</p>
 
 		</>
 	);
