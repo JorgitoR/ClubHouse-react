@@ -75,16 +75,12 @@ export default function Home(){
 
 		<BottomSheet 
 			sheetTitle='new room'
-			setSheetVisible={(item) => setSheetVisible(item)}
+			setSheetVisible={(item) => setSheetCreateRoom(item)}
 			sheetVisible = {sheetCreateRoom}
 			cardDetail={newRoomData}
 			setItemsVisible = {(item) => setItemsVisible(item)}
 
 		/>
-
-
-
-
 		</>
 	);	
 

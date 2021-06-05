@@ -26,6 +26,13 @@ export default function NewRoom(props){
   						<img src="/images/user-img.jpg" alt="" className={style.profile_img} />
 					</div>
 				</div>
+
+				<div className={style.roomDetailCard}>
+					<div className="d-flex align-items-center justify-content-between flex-wrap"
+					  style={{padding:"0.5em 1em"}}>
+					</div>
+				</div>
+
 			</div>
 		</>
 	);
