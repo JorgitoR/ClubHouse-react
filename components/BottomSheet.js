@@ -2,6 +2,7 @@ import React from "react";
 import SwipeableBottomSheet from "react-swipeable-bottom-sheet";
 import style from "../style/bottom.mudule.css";
 import StartRoom from "./bottom/StartRoom";
+import NewRoom from "./bottom/NewRoom";
 
 
 export default function BottomSheet(props){
@@ -20,13 +21,7 @@ export default function BottomSheet(props){
 		<div className="BottomSheetContainer"
 		style={{backgroundColor:props.sheetTitle === 'profile' ? 'transparent' : '' }}>
 
-			<StartRoom 
-				setSheetCreateRoom={props.sheetCreateRoom}
-				setSheetVisible={(item) => {
-					props.setSheetVisible(item);
-					props.setItemsVisible(true);
-				}}
-			/>
+	
 
 		</div>
 

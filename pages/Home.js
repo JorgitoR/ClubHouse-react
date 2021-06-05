@@ -10,6 +10,7 @@ import { AiOutlinePlus } from 'react-icons/ai';
 import { BsGrid3X3Gap } from 'react-icons/bs';
 
 import data from "../Data/roomCard.json"
+import newRoomData from "../Data/NewRoom.json"
 
 export default function Home(){
 
@@ -21,6 +22,25 @@ export default function Home(){
 
 	return (
 		<>
+
+		{loaderVisibility ? (
+			<div style={{position:"fixed",
+
+				top:"0",
+				right:"0",
+				bottom:"0",
+				left:"0",
+				display:"flex",
+				alignItems:"center",
+				justifyContent:"center",
+			}}>	
+				<img src="/images/loader.gif" alt="" />
+			</div>
+
+		) : (
+			""
+		)}
+
 		<Header/>
 
 		<div className={style.home_container}>
@@ -51,9 +71,21 @@ export default function Home(){
 					setLoaderVisibility(false)
 				}, 1000);
 			}}
+		/>
 
+
+		<BottomSheet 
+			sheetTitle='new room'
+			setSheetVisible={(item) => setSheetVisible(item)}
+			sheetVisible = {sheetCreateRoom}
+			cardDetail={newRoomData}
+			setItemsVisible = {(item) => setItemsVisible(item)}
 
 		/>
+
+
+
+
 		</>
 	);	
 
