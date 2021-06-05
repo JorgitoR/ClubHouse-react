@@ -21,7 +21,7 @@ export default function BottomSheet(props){
 		<div className="BottomSheetContainer"
 		style={{backgroundColor:props.sheetTitle === 'profile' ? 'transparent' : '' }}>
 
-			{props.sheetTitle == "new room" ? (
+			{props.sheetTitle === "new room" ? (
 
 				<NewRoom 
 					cardDetail={props.cardDetail}
@@ -31,7 +31,7 @@ export default function BottomSheet(props){
 					}}
 				/>
 
-			) : props.sheetTitle == "start room" ? (
+			) : props.sheetTitle === "start room" ? (
 
 				<StartRoom 
 					setSheetCreateRoom={props.setSheetCreateRoom}

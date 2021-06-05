@@ -1,0 +1,24 @@
+.roomDetailContainer .head{
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.8em 0.5em 1.5em 0.5em;
+
+}
+
+.head .arrow_icon{
+	width: 15px;
+	transform: rotate(-90deg);
+	margin-top: -0.5em;
+}
+
+.head .profile_img{
+	width: 25px;
+	border-radius: 0.8em;
+	margin-left: 1.2em;
+}
+
+.head span{
+	font-size: 1em;
+}
