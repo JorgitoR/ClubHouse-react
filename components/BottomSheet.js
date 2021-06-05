@@ -21,7 +21,37 @@ export default function BottomSheet(props){
 		<div className="BottomSheetContainer"
 		style={{backgroundColor:props.sheetTitle === 'profile' ? 'transparent' : '' }}>
 
-	
+			{props.sheetTitle == "new room" ? (
+
+				<NewRoom 
+					cardDetail={props.cardDetail}
+					setSheetVisible={(item) => {
+						props.setSheetVisible(item);
+						props.setItemsVisible(true);
+					}}
+				/>
+
+			) : this.props.sheetTitle == "start room" ? (
+
+				<StartRoom 
+					setSheetCreateRoom={props.setSheetCreateRoom}
+					setSheetVisible={(item) => {
+						props.setSheetVisible(item)
+						props.setItemsVisible(true)
+					}}
+				/>
+
+			) : (
+				""
+			)}
+
+			<StartRoom 
+				setSheetCreateRoom={props.sheetCreateRoom}
+				setSheetVisible={(item) => {
+					props.setSheetVisible(item);
+					props.setItemsVisible(true);
+				}}
+			/>
 
 		</div>
 
