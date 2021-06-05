@@ -30,6 +30,25 @@ export default function NewRoom(props){
 				<div className={style.roomDetailCard}>
 					<div className="d-flex align-items-center justify-content-between flex-wrap"
 					  style={{padding:"0.5em 1em"}}>
+					  {card.members.map((item)=> (
+
+					  	<div className={style.memberContainer}>
+					  		{micMuteVisible ? (
+					  			<div className={style.audio_icon}>
+					  				<BsMicMuteFill />
+					  			</div>
+					  		) : (
+					  			""
+					  		)}
+
+					  		<img src="/images/user-img.jpg" alt="" />
+					  		<p>
+					  			<span>*</span>
+					  			{item.first_name}
+					  		</p>
+					  	</div>
+
+					  	))}
 					</div>
 				</div>
 
