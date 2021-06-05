@@ -31,7 +31,7 @@ export default function BottomSheet(props){
 					}}
 				/>
 
-			) : this.props.sheetTitle == "start room" ? (
+			) : props.sheetTitle == "start room" ? (
 
 				<StartRoom 
 					setSheetCreateRoom={props.setSheetCreateRoom}
