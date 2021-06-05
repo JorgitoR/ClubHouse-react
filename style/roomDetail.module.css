@@ -22,3 +22,28 @@
 .head span{
 	font-size: 1em;
 }
+
+.head svg{
+	font-size: 1.4em;
+}
+
+.roomDetailCard{
+	background-color: #ffffff;
+	padding: 1em 1em 3em 1em;
+	border-radius: 1.5em 1.5em 0 0;
+	height: 90vh;
+	overflow: auto;
+}
+
+.roomDetailCard h6{
+	font-size: 0.675em;
+	color: var(--textColor);
+	font-weight: 500;
+	margin-bottom: 0.3em;
+}
+
+.roomDetailCard img{
+	width: 70px;
+	border-radius: 1.7em;
+}
+
