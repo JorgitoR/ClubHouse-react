@@ -3,12 +3,23 @@ import style from "../style/explore.module.css";
 import { DownOutlined, FiredOutLines } from "@ant-design/icons";
 import data from "../Data/Explore.json";
 
+import {Input} from 'antd';
+
 export default function Explore(){
 	const {people, conversation} = data;
 
 	return (
 
 		<div className={style.exploreContainer}>
+
+			<div className={style.header}>
+				<Input style={{
+					backgroundColor:"#f4f4f4",
+					borderRadius:"0.8em",
+
+				}}></Input>
+			</div>
+
 			<h6>People To Follow</h6>
 			<div className={style.peopleContainer}>
 				{people.map((item) => (
@@ -30,7 +41,7 @@ export default function Explore(){
 				</button>
 			</div>
 
-			
+
 				<h6>FIND CONVERSATIONS ABOUT ...</h6>
 				<div className="row mx-0">
 					{conversation.map((item) => (
