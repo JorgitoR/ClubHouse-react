@@ -1,7 +1,7 @@
 import React from "react";
 import style from "../style/explore.module.css";
 import { DownOutlined, FiredOutLines } from "@ant-design/icons";
-import data from "../data/Explore.json";
+import data from "../Data/Explore.json";
 
 export default function Explore(){
 	const {people, conversation} = data;
@@ -19,18 +19,20 @@ export default function Explore(){
 								<h5>{item.title}</h5>
 								<p>{item.description}</p>
 							</div>
-							<button>
-								Seguir
-							</button>
 						</div>
+
+						<button>Seguir</button>
 					</div>
 				))}
 
 				<button className={style.ShowMore}>
 					Show more people <DownOutlined />
 				</button>
+
+
+
 			</div>
 		</div>
 
-	)
+	);
 }

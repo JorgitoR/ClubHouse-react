@@ -33,7 +33,7 @@ export default function CodeConfirm(){
 
 			</div>
 
-			<Link exact to='/allow_notification' className='primaryBtn d-flex align-items-center'>
+			<Link exact to='/notification' className='primaryBtn d-flex align-items-center'>
 				Siguiente
 			</Link>
 

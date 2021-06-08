@@ -42,11 +42,11 @@ function App(){
   		</PlanLayout>
   		</Route>
 
-  		<Route exact path={['/home']}>
+  		<Route exact path={['/home', '/explore']}>
   			<AppLayaout>
   				<Switch>
   					<Route exact path="/home" component={() => <Home />} />
-            <Route exact path="/home" component={Explore}/>
+            <Route exact path="/explore" component={Explore} />
   			
   				</Switch>
   			</AppLayaout>
