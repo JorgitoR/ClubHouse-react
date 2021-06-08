@@ -56,6 +56,7 @@ export default function NewRoom(props){
 				<div className={style.footer}>
 					<button onClick={() => {props.setSheetVisible(false);}}>
 						<img src="/images/hand-peace.png" alt="" />
+						Leave Quitely
 					</button>
 					<div>
 						<button>
@@ -63,6 +64,7 @@ export default function NewRoom(props){
 						</button>
 						<button>
 							<img src="/images/stopHandIcon.png" alt="" />
+
 						</button>
 						<button onClick={()=> setMicMuteVisible(!micMuteVisible)}>
 							{micMuteVisible ? <BsMicMuteFill/> : <BsMicFill /> }
