@@ -81,6 +81,7 @@ export default function Home(){
 			setItemsVisible = {(item) => setItemsVisible(item)}
 
 		/>
+		
 		</>
 	);	
 

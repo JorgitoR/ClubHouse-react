@@ -45,14 +45,7 @@ export default function BottomSheet(props){
 				""
 			)}
 
-			<StartRoom 
-				setSheetCreateRoom={props.sheetCreateRoom}
-				setSheetVisible={(item) => {
-					props.setSheetVisible(item);
-					props.setItemsVisible(true);
-				}}
-			/>
-
+		
 		</div>
 
 		</SwipeableBottomSheet>
