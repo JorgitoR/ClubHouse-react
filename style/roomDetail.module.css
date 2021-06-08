@@ -47,3 +47,23 @@
 	border-radius: 1.7em;
 }
 
+.memberContainer{
+	text-align: center;
+	width: 70px;
+	position: relative;
+}
+
+.memberContainer .audio_icon{
+	position: absolute;
+	right: -5px;
+	bottom: 36px;
+	z-index: 5;
+	background-color: #ffffff;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0px 0px 3px #cccccc;
+}

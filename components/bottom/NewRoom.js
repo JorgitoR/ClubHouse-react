@@ -5,7 +5,7 @@ import { BsMicMuteFill } from "react-icons/bs";
 
 export default function NewRoom(props){
 
-	const [micMuteVisible, setMicMuteVisible] = useState(false);
+	const [micMuteVisible, setMicMuteVisible] = useState(true);
 	const card = props.cardDetail;
 
 	return(
