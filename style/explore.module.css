@@ -91,3 +91,22 @@
 	padding: 0.5em;
 	box-shadow: 0px 2px 3px #cccccc;
 }
+
+.conversationCard h6{
+	color: var(--textColor);
+	font-size: 1em;
+	margin: 0;
+	display: flex;
+	align-items: center;
+}
+
+.conversationCard h6 span{
+	margin-right: 0.2em;
+}
+
+.conversationCard p{
+	margin: 0;
+	color: #aaaaaa;
+	line-height: 1.2;
+	font-size: 0.82em;
+}
