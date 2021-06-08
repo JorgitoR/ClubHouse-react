@@ -8,11 +8,16 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import PhoneConfirmation from './pages/PhoneConfirmation';
 import CodeConfirm from './pages/CodeConfirm';
 import notification from './pages/notification';
+
+import Explore from './pages/Explore';
+
 //npm install react-router
 //npm install react-router-dom
 //npm install react-phone-number-input
 //npm install react-icons
 //npm install react-swipeable-bottom-sheet
+//npm install ant-design
+//npm install antd
 
 function App(){
   return (
@@ -40,8 +45,9 @@ function App(){
   		<Route exact path={['/home']}>
   			<AppLayaout>
   				<Switch>
-  					<Route exact path="/home" component={Home}>
-  					</Route>
+  					<Route exact path="/home" component={() => <Home />} />
+            <Route exact path="/home" component={Explore}/>
+  			
   				</Switch>
   			</AppLayaout>
   		</Route>
