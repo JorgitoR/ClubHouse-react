@@ -28,10 +28,22 @@ export default function Explore(){
 				<button className={style.ShowMore}>
 					Show more people <DownOutlined />
 				</button>
-
-
-
 			</div>
+
+			
+				<h6>FIND CONVERSATIONS ABOUT ...</h6>
+				<div className="row mx-0">
+					{conversation.map((item) => (
+						<div className="col-6 px-2 mb-3">
+							<div className={style.conversationCard}>
+								<h6>
+									{item.title}
+								</h6>
+								<p>{item.discription}</p>
+							</div>
+						</div>
+					))}
+				</div>
 		</div>
 
 	);

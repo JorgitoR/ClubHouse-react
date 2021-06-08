@@ -84,3 +84,10 @@
 	font-size: 1em;
 	padding: 0.1em 1.2em;
 }
+
+.conversationCard{
+	background-color: #ffffff;
+	border-radius: 0.5em;
+	padding: 0.5em;
+	box-shadow: 0px 2px 3px #cccccc;
+}
