@@ -30,3 +30,24 @@
 	color: #aaaaaa;
 	margin: 0;
 }
+
+.profileContainer .follow{
+	display: flex;
+	margin-bottom: 2.5em;
+}
+
+.profileContainer .follow > p:first:child{
+	margin-right: 2.5em;
+}
+
+.profileContainer .follow p span{
+	font-weight: 500;
+	color: var(--textColor);
+	margin-right: 0.2em;
+	font-size: 1.3em;
+}
+
+.profileContainer button{
+	
+}
+
