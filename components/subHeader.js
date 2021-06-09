@@ -4,6 +4,6 @@ import style from "../style/explore.module.css"
 export default function Explore(props){
 
 	return (
-		<h1>Explore</h1>
+		<h1>{props.pageTitle}</h1>
 	)
 }

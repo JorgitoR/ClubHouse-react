@@ -16,7 +16,7 @@ export default function Explore(){
 
 			<div className={style.header}>
 
-				<SubHeader />
+				<SubHeader pageTitle="Explore" />
 
 				<Input style={{
 					backgroundColor:"#f4f4f4",
