@@ -38,7 +38,12 @@ export default function perfil(){
 				<p>
 					<span>51</span> following
 				</p>
+
+			</div>
+		
 				<button>Add a bio</button>
+			
+
 				<div className="mb-4">
 					<button className="mb-0">
 						<AiOutlineTwitter /> Add Twitter
@@ -48,7 +53,6 @@ export default function perfil(){
 						<AiOutlineInstagram /> Add Instagram
 					</button>
 				</div>
-			</div>
 
 			<div className={style.nominated}>
 				<img src="/images/user-img.jpg" />
