@@ -5,6 +5,8 @@ import data from "../Data/Explore.json";
 
 import {Input} from 'antd';
 
+import SubHeader from "../components/subHeader";
+
 export default function Explore(){
 	const {people, conversation} = data;
 
@@ -13,11 +15,23 @@ export default function Explore(){
 		<div className={style.exploreContainer}>
 
 			<div className={style.header}>
+
+				<SubHeader />
+
 				<Input style={{
 					backgroundColor:"#f4f4f4",
 					borderRadius:"0.8em",
+					padding:"0.3em 1em",
+					border:"none",
+					boxShadow:"none"
 
-				}}></Input>
+				}}
+				size="large"
+				placeholder="Encontrar personas y clubs"
+				prefix={<img src="images/search.png" width="15px"/>}
+				>
+
+				</Input>
 			</div>
 
 			<h6>People To Follow</h6>
