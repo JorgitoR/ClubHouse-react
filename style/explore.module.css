@@ -120,3 +120,23 @@
 	z-index: 5;
 	padding: 0.5em;
 }
+
+.head{
+	text-align: center;
+	padding: 0.5em 0.5em;
+	position: relative;
+	margin-bottom: 0.5em;
+}
+
+.head img{
+	height: 15px;
+	position: absolute;
+	left: 0px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.head h3{
+	margin: 0;
+	font-size: 1.2em;
+}

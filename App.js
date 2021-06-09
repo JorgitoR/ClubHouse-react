@@ -11,6 +11,8 @@ import notification from './pages/notification';
 
 import Explore from './pages/Explore';
 
+import Profile from './pages/profile'
+
 //npm install react-router
 //npm install react-router-dom
 //npm install react-phone-number-input
@@ -42,11 +44,12 @@ function App(){
   		</PlanLayout>
   		</Route>
 
-  		<Route exact path={['/home', '/explore']}>
+  		<Route exact path={['/home', '/explore', '/profile']}>
   			<AppLayaout>
   				<Switch>
   					<Route exact path="/home" component={() => <Home />} />
             <Route exact path="/explore" component={Explore} />
+            <Route exact path="/profile" component={Profile} />
   			
   				</Switch>
   			</AppLayaout>
