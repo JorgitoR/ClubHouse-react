@@ -1,0 +1,20 @@
+.profileContainer{
+	height: 100%;
+	overflow: auto;
+	padding: 0 0.5em;
+	padding-top: 5em;
+}
+
+.actionBtn svg{
+	font-size: 2em;
+	margin-right: 1em;
+}
+
+.profileContainer .profile_image{
+	width: 80px;
+	border-radius: 2.2em;
+}
+
+.actionBtn svg:last-child{
+	margin-right: 0;
+}

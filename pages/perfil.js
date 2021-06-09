@@ -26,6 +26,11 @@ export default function perfil(){
 
 				</div>
 			</div>
+
+			<img src="/images/user-img.jpg" className={style.profile_image}/>
+			<h4>Rafeh Qazzi</h4>
+			<p>@cleverqazi</p>
+
 		</div>
 		</>
 	)
