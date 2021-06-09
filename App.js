@@ -11,7 +11,7 @@ import notification from './pages/notification';
 
 import Explore from './pages/Explore';
 
-import profile from './pages/Profile';
+import profile from './pages/perfil';
 
 //npm install react-router
 //npm install react-router-dom
