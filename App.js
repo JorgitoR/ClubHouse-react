@@ -11,7 +11,7 @@ import notification from './pages/notification';
 
 import Explore from './pages/Explore';
 
-import Profile from './pages/profile'
+import profile from './pages/Profile';
 
 //npm install react-router
 //npm install react-router-dom
@@ -49,7 +49,7 @@ function App(){
   				<Switch>
   					<Route exact path="/home" component={() => <Home />} />
             <Route exact path="/explore" component={Explore} />
-            <Route exact path="/profile" component={Profile} />
+            <Route exact path="/profile" component={profile} />
   			
   				</Switch>
   			</AppLayaout>
